@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FOOTBALLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Login">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Performance">
+    <Key>
+      <PropertyRef Name="RankId" />
+    </Key>
+    <Property Name="RankId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RankName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Goals" Type="Int32" Nullable="false" />
+    <Property Name="RedCards" Type="Int32" Nullable="false" />
+    <Property Name="YellowCards" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_Profile" Relationship="Self.FK_tbl_Profile_tbl_Performance" FromRole="tbl_Performance" ToRole="tbl_Profile" />
+  </EntityType>
+  <EntityType Name="tbl_Profile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Nationality" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CurrentTeam" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Height" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Weight" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="RankId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_Performance" Relationship="Self.FK_tbl_Profile_tbl_Performance" FromRole="tbl_Profile" ToRole="tbl_Performance" />
+  </EntityType>
+  <Association Name="FK_tbl_Profile_tbl_Performance">
+    <End Role="tbl_Performance" Type="Self.tbl_Performance" Multiplicity="1" />
+    <End Role="tbl_Profile" Type="Self.tbl_Profile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Performance">
+        <PropertyRef Name="RankId" />
+      </Principal>
+      <Dependent Role="tbl_Profile">
+        <PropertyRef Name="RankId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FOOTBALLEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tbl_Login" EntityType="Self.tbl_Login" />
+    <EntitySet Name="tbl_Performance" EntityType="Self.tbl_Performance" />
+    <EntitySet Name="tbl_Profile" EntityType="Self.tbl_Profile" />
+    <AssociationSet Name="FK_tbl_Profile_tbl_Performance" Association="Self.FK_tbl_Profile_tbl_Performance">
+      <End Role="tbl_Performance" EntitySet="tbl_Performance" />
+      <End Role="tbl_Profile" EntitySet="tbl_Profile" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

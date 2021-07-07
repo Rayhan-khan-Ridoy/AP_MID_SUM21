@@ -1,0 +1,61 @@
+﻿@model IEnumerable<MidProject.Models.tbl_Performance>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div align="center"><h2 style="color:navy">PERFORMANCE RECORDS</h2></div>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RankName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Goals)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RedCards)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YellowCards)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RankName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Goals)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RedCards)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YellowCards)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RankId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RankId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RankId })
+        </td>
+    </tr>
+}
+
+</table>
+<div align="center">
+    <p class="btn btn-success">
+        @Html.ActionLink("ADD NEW PERFORMANCE", "Create")
+    </p>
+</div>

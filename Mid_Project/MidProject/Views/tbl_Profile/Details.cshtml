@@ -1,0 +1,66 @@
+﻿@model MidProject.Models.tbl_Profile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color:navy">DETAILS INFO ABOUT MR.@Session["Username"]</h2>
+
+<div>
+    @*<h4>tbl_Profile</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTeam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTeam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Performance.RankName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Performance.RankName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿@model MidProject.Models.tbl_Performance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color:navy">DETAILS INFO ABOUT MR.@Session["Username"]</h2>
+
+<div>
+    @*<h4>tbl_Performance</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RankName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RankName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Goals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Goals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RedCards)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RedCards)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YellowCards)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YellowCards)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RankId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
