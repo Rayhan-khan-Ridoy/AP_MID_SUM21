@@ -1,0 +1,12 @@
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\bin\Debug\BEL.dll
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\bin\Debug\BEL.pdb
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\obj\Debug\BEL.dll
+S:\SUMMER 20-21\.NET\tasks\assignment3\BEL\obj\Debug\BEL.pdb
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\bin\Debug\BEL.dll
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\bin\Debug\BEL.pdb
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\obj\Debug\BEL.dll
+S:\SUMMER 20-21\.NET\tasks\assignment3_backend\BEL\obj\Debug\BEL.pdb
