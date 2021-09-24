@@ -1,0 +1,33 @@
+<form>
+ <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Name:</td>
+    <td><input type="text" class="form-control" ng-model="p.Name" value="{{p.Name}}">
+    <span class="text text-danger">{{nameError}}</span></td>
+  </tr>
+  <tr>
+    <td>UserName:</td>
+    <td><input type="text"  class="form-control" ng-model="p.UserName" value="{{p.UserName}}"">
+    <span class="text text-danger">{{userNameError}}</span></td>
+  </tr>
+  <tr>
+    <td>Degree:</td>
+    <td><input type="text" class="form-control" ng-model="p.Degree" value="{{p.Degree}}">
+    <span class="text text-danger">{{degreeError}}</span></td>
+  </tr>
+  <tr>
+    <td>Major</td>
+    <td><input type="text" class="form-control" ng-model="p.Major" value="{{p.Major}}">
+    <span class="text text-danger">{{majorError}}</span></td>
+  </tr>
+    <tr>
+      <td>Salary:</td>
+      <td>
+        <input type="text" class="form-control" ng-model="p.Salary_Id" value="{{p.Salary_Id}}">
+      <span class="text text-danger">{{salaryError}}</span></td>
+    </tr>
+  <tr>
+    <td><input type="submit" ng-click="UpdatePhysio(p)" class="btn btn-success" name="submit" value="Update Physio"></td>
+  </tr>
+  </table>
+</form>

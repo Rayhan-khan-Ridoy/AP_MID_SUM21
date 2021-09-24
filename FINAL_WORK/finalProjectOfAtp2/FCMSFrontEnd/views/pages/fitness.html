@@ -1,0 +1,26 @@
+<a href="#!/physioDashboard" class="btn btn-success">Back</a>
+<aside class=contentinner style="font-size:15px">
+    <table style="" class="table table-bordered table-hover">
+        <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+     <td>Id</td>
+     <td>Name</td>
+     <td>Status</td>
+     <td>Action</td>
+    </tr>
+    <tr align="center" ng-repeat="p in fitness track by $index">
+      <td>{{p.Id}}</td>
+      <td>{{p.PlayerName}}</td>
+      <td>{{p.Status}}</td>
+      <td><a href="#!/physio_fitnessUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+
+          <a href="#!/physio_fitnessDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+
+          
+
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#!physio_fitnessCreate" class="btn btn-primary">Add Fitness</a></td>
+    </tr>
+  </table>
+</aside>

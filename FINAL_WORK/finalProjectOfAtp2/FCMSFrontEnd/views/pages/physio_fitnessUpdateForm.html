@@ -1,0 +1,18 @@
+<form>
+ <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Fitness Status</td>
+    <td>
+      <select class="form-control form-control-line" required ng-model="p.Status" ng-change="{{p.Status}}">
+
+              <option  value="Fit" >Fit</option>
+              <option  value="Injured" >Injured</option>
+							<option  value="Rested" >Rested</option>
+			</select>
+    </td>
+  </tr>
+  <tr>
+    <td><input type="submit" ng-click="UpdateFitness(p)" class="btn btn-success" name="submit" value="Update Fitness"></td>
+  </tr>
+  </table>
+</form>

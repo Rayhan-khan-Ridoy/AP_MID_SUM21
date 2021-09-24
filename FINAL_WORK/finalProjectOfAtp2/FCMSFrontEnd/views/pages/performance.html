@@ -1,0 +1,24 @@
+<div >
+  <table class="table table-bordered table-hover"  style="width:1100px">
+    <tr style="background:linear-gradient(45deg, black, transparent);font-size:20px;">
+      <th style="padding:20px;color:red;">PLAYER ID </th>
+      <th style="padding:20px;color:red;">PLAYERS NAME</th>
+      <th style="padding:20px;color:red;">AVG. RATING</th>
+      <th style="padding:20px;color:red;">GOALS</th>
+      <th style="padding:20px;color:red;">RED</th>
+      <th style="padding:20px;color:red;">YELLOW</th>
+      <th style="padding:20px;color:red;">ASISTS</th>
+
+    </tr>
+    <tr ng-repeat="per in performance " style="font-size:20px;"> <!--ng-repeat="" use korbo ekhane -->
+        <td style="padding:20px;">{{per.Id}}</td>
+        <td style="padding:20px;">{{per.Name}}</td>
+        <td style="padding:20px;">{{per.Avg_Rating}}</td>
+        <td style="padding:20px;">{{per.Goals}}</td>
+        <td style="padding:20px;">{{per.Red_Cards}}</td>
+        <td style="padding:20px;">{{per.Yellow_Cards}}</td>
+        <td style="padding:20px;">{{per.Assists}}</td>
+    </tr>
+
+  </table>
+  </div >

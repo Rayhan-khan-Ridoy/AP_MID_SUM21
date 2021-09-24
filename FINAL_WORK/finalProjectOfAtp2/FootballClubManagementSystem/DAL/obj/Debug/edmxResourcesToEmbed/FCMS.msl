@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FCMSModelStoreContainer" CdmEntityContainer="FCMSEntities">
+    <EntitySetMapping Name="ClubAdmins">
+      <EntityTypeMapping TypeName="FCMSModel.ClubAdmin">
+        <MappingFragment StoreEntitySet="ClubAdmin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coaches">
+      <EntityTypeMapping TypeName="FCMSModel.Coach">
+        <MappingFragment StoreEntitySet="Coaches">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Salary_Id" ColumnName="Salary_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fitnesses">
+      <EntityTypeMapping TypeName="FCMSModel.Fitness">
+        <MappingFragment StoreEntitySet="Fitness">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fixtures">
+      <EntityTypeMapping TypeName="FCMSModel.Fixture">
+        <MappingFragment StoreEntitySet="Fixtures">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Opponent" ColumnName="Opponent" />
+          <ScalarProperty Name="Match_Status" ColumnName="Match_Status" />
+          <ScalarProperty Name="Ground_Name" ColumnName="Ground_Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Formations">
+      <EntityTypeMapping TypeName="FCMSModel.Formation">
+        <MappingFragment StoreEntitySet="Formations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Performances">
+      <EntityTypeMapping TypeName="FCMSModel.Performance">
+        <MappingFragment StoreEntitySet="Performances">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Avg_Rating" ColumnName="Avg_Rating" />
+          <ScalarProperty Name="Goals" ColumnName="Goals" />
+          <ScalarProperty Name="Assists" ColumnName="Assists" />
+          <ScalarProperty Name="Accurate_Pass" ColumnName="Accurate_Pass" />
+          <ScalarProperty Name="Key_Pass" ColumnName="Key_Pass" />
+          <ScalarProperty Name="Interception" ColumnName="Interception" />
+          <ScalarProperty Name="Successfully_Tackled" ColumnName="Successfully_Tackled" />
+          <ScalarProperty Name="Chance_Create" ColumnName="Chance_Create" />
+          <ScalarProperty Name="Dribbles_Completed" ColumnName="Dribbles_Completed" />
+          <ScalarProperty Name="Saves" ColumnName="Saves" />
+          <ScalarProperty Name="Red_Cards" ColumnName="Red_Cards" />
+          <ScalarProperty Name="Yellow_Cards" ColumnName="Yellow_Cards" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Physios">
+      <EntityTypeMapping TypeName="FCMSModel.Physio">
+        <MappingFragment StoreEntitySet="Physios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="Major" ColumnName="Major" />
+          <ScalarProperty Name="Salary_Id" ColumnName="Salary_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="FCMSModel.Player">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Joining_Date" ColumnName="Joining_Date" />
+          <ScalarProperty Name="Contract_Year" ColumnName="Contract_Year" />
+          <ScalarProperty Name="Performance_Id" ColumnName="Performance_Id" />
+          <ScalarProperty Name="Salary_Id" ColumnName="Salary_Id" />
+          <ScalarProperty Name="Fitness_Id" ColumnName="Fitness_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salaries">
+      <EntityTypeMapping TypeName="FCMSModel.Salary">
+        <MappingFragment StoreEntitySet="Salaries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogIns">
+      <EntityTypeMapping TypeName="FCMSModel.LogIn">
+        <MappingFragment StoreEntitySet="LogIn">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,45 @@
+<aside class=contentinner>
+<form align="center">
+ <table class="table table-dark table-striped" style="width:600px;">
+  <tr>
+    <td style="font-size:17px;">Name:</td>
+    <td><input type="text" class="form-control" ng-model="p.Name" value="">
+    <span class="text text-danger">{{nameError}}</span></td>
+  </tr>
+  <tr>
+    <td style="font-size:17px;">UserName:</td>
+    <td><input type="text"  class="form-control" ng-model="p.UserName" value="">
+    <span class="text text-danger">{{userNameError}}</span></td>
+  </tr>
+  <tr>
+    <td style="font-size:17px;">Passowrd:</td>
+    <td><input type="password"  class="form-control" ng-model="p.Password" value="">
+    <span class="text text-danger">{{passError}}</span></td>
+  </tr>
+  <tr>
+    <td style="font-size:17px;">Nationality:</td>
+    <td><input type="text" class="form-control" ng-model="p.Nationality" value="">
+    <span class="text text-danger">{{nationalityError}}</span></td>
+  </tr>
+  <tr>
+    <td style="font-size:17px;">Age:</td>
+    <td><input type="number" class="form-control" ng-model="p.Age" value="">
+    <span class="text text-danger">{{ageError}}</span></td>
+  </tr>
+  <tr>
+    <td style="font-size:17px;">Salary:</td>
+    <td>
+      <select class="form-control form-control-line" required ng-model="p.Salary_Id">
+							<option disabled selected>Select Salary</option>
+							<option ng-repeat ="s in salary" value={{s.Id}}>{{s.Grade}}</option>
+
+			</select>
+      <span class="text text-danger">{{salaryError}}</span>
+    </td>
+  </tr>
+  <tr>
+    <td><input style="font-size:17px;" class="btn btn-success" type="submit" ng-click="AddCoach(p)"  name="submit" value="Add Coach"></td>
+  </tr>
+  </table>
+</form>
+</aside>

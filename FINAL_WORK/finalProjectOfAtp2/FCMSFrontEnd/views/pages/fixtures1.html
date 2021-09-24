@@ -1,0 +1,30 @@
+<a href="#!/adminDashboard" class="btn btn-success">Back</a>
+<aside class=contentinner style="font-size:15px">
+<table style="" class="table table-bordered table-hover">
+    <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+     <td>Id</td>
+     <td>Opponent</td>
+     <td>Match Status</td>
+     <td>Ground Name</td>
+     <td>Match Date</td>
+     <td>Result</td>
+     <td>Action</td>
+    </tr>
+    <tr align="center" ng-repeat="p in fixture track by $index">
+      <td>{{p.Id}}</td>
+      <td>{{p.Opponent}}</td>
+      <td>{{p.Match_Status}}</td>
+      <td>{{p.Ground_Name}}</td>
+      <td>{{p.Date}}</td>
+      <td>{{p.Result}}</td>
+      <td><a href="#!/admin_fixtureUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+          <a href="#!/admin_fixtureDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+          <a href ="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#!admin_fixtureCreate" class="btn btn-primary">Add Fixture</a></td>
+    </tr>
+  </table>
+
+</aside>

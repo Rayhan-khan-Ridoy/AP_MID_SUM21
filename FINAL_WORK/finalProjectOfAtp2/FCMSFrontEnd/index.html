@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <!--<base href="/" />-->
+    <meta charset="utf-8">
+    <script src="app/lib/angular.min.js"></script>
+    <link rel="shortcut icon" href=content/css/favicon.ico>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel=stylesheet href=content/css/vendor.css>
+    <link rel=stylesheet href=content/css/style.css>
+    <link rel=stylesheet type=text/css href=content/css/layerslider.css>
+    <script src=content/js/vendor/modernizr.js></script>
+    <link rel="stylesheet" href="content/style.css">
+    <script src="app/lib/angular.route.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <!--=================================form==============================================================-->
+      <link rel="icon" type="image/png" href="content/form/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="content/form/css/util.css">
+      <link rel="stylesheet" type="text/css" href="content/form/css/main.css">
+    <!--=========================================form end======================================================-->
+
+    <title></title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-include="'views/inc/top_nav.html'"></div>
+      <div ng-include="'views/inc/side_nav.html'"></div>
+    <div ng-view class="new">
+    </div>
+
+    <!--===================================form============================================================-->
+      <script src="content/form/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/vendor/bootstrap/js/popper.js"></script>
+      <script src="content/form/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/vendor/daterangepicker/moment.min.js"></script>
+      <script src="content/form/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+      <script src="content/form/js/main.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+      </script>
+      <!--======================================form end=========================================================-->
+
+  </body>
+
+
+
+
+  <script src=content/js/vendor/vendor.js></script>
+  <script src=content/js/main.js></script>
+</html>
+
+<!-- Add Services here -->
+<script src="app/services/ajax.js"></script>
+
+
+<!-- Add Controllers here -->
+<script src="app/controllers/demo.js"></script>
+<script src="app/controllers/PlayerSearch.js"></script>
+<script src="app/controllers/player_f.js"></script>
+<script src="app/controllers/physio_f.js"></script>
+<script src="app/controllers/admin_f.js"></script>
+<script src="app/controllers/coach_f.js"></script>
+<script src="app/controllers/coach_f1.js"></script>
+
+<script src="app/controllers/admin_playersUpdate.js"></script>
+<script src="app/controllers/admin_playerDetails.js"></script>
+<script src="app/controllers/PlayerCreate.js"></script>
+<script src="app/controllers/admin_playerDelete.js"></script>
+
+<script src="app/controllers/loginPlayer.js"></script>
+<script src="app/controllers/loginAdmin.js"></script>
+<script src="app/controllers/loginCoach.js"></script>
+<script src="app/controllers/loginAdmin.js"></script>
+<script src="app/controllers/loginPhysio.js"></script>
+
+<script src="app/controllers/fixtures.js"></script>
+<script src="app/controllers/performance.js"></script>
+<script src="app/controllers/player_f1.js"></script>
+<script src="app/controllers/player_f2.js"></script>
+
+<script src="app/controllers/playerDashboard.js"></script>
+<script src="app/controllers/adminDashboard.js"></script>
+<script src="app/controllers/coachDashboard.js"></script>
+<script src="app/controllers/physioDashboard.js"></script>
+
+<script src="app/controllers/admin_playerGK.js"></script>
+<script src="app/controllers/admin_playerCF.js"></script>
+<script src="app/controllers/admin_playerCMF.js"></script>
+<script src="app/controllers/admin_playerDMF.js"></script>
+<script src="app/controllers/admin_playerCB.js"></script>
+<script src="app/controllers/admin_playerWingers.js"></script>
+
+<script src="app/controllers/admin_playersCreate.js"></script>
+
+<script src="app/controllers/admin_coachCreate.js"></script>
+<script src="app/controllers/admin_coachUpdate.js"></script>
+<script src="app/controllers/admin_coachDelete.js"></script>
+
+<script src="app/controllers/admin_physioRead.js"></script>
+<script src="app/controllers/admin_physioCreate.js"></script>
+<script src="app/controllers/admin_physioUpdate.js"></script>
+<script src="app/controllers/admin_physioDelete.js"></script>
+
+<script src="app/controllers/admin_salaryRead.js"></script>
+<script src="app/controllers/admin_salaryCreate.js"></script>
+<script src="app/controllers/admin_salaryUpdate.js"></script>
+<script src="app/controllers/admin_salaryDelete.js"></script>
+<script src="app/controllers/PlayerSalaryDetails.js"></script>
+
+<script src="app/controllers/admin_performanceRead.js"></script>
+<script src="app/controllers/admin_PerformanceCreate.js"></script>
+<script src="app/controllers/admin_PerformanceUpdate.js"></script>
+<script src="app/controllers/admin_PerformanceDelete.js"></script>
+<script src="app/controllers/admin_PerformanceDetails.js"></script>
+
+<script src="app/controllers/admin_fixtureRead1.js"></script>
+<script src="app/controllers/admin_fixtureCreate.js"></script>
+<script src="app/controllers/admin_fixtureUpdate.js"></script>
+<script src="app/controllers/admin_fixtureDelete.js"></script>
+
+<script src="app/controllers/coach_formationRead.js"></script>
+<script src="app/controllers/coach_formationCreate.js"></script>
+<script src="app/controllers/coach_formationUpdate.js"></script>
+<script src="app/controllers/coach_formationDelete.js"></script>
+<script src="app/controllers/adminDashboard.js"></script>
+
+
+<script src="app/controllers/physio_fitnessRead.js"></script>
+<script src="app/controllers/physio_fitnessCreate.js"></script>
+<script src="app/controllers/physio_fitnessUpdate.js"></script>
+<script src="app/controllers/physio_fitnessDelete.js"></script>

@@ -1,0 +1,27 @@
+<form>
+ <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Amount:</td>
+    <td><input type="number" class="form-control" ng-model="p.Amount" value="">
+    <span class="text text-danger">{{amountError}}</span></td>
+  </tr>
+  <tr>
+    <td>Salary Grade:</td>
+    <td><input type="text"  class="form-control" ng-model="p.Grade" value="">
+    <span class="text text-danger">{{salaryGradeError}}</span></td>
+  </tr>
+  <tr>
+    <td>Bonus:</td>
+    <td><input type="number"  class="form-control" ng-model="p.Bonus" value="">
+    <span class="text text-danger">{{bonusError}}</span></td>
+  </tr>
+  <tr>
+    <td>Status:</td>
+    <td><input type="text"  class="form-control" ng-model="p.Status" value="">
+    <span class="text text-danger">{{statusError}}</span></td>
+  </tr>
+  <tr>
+    <td><input type="submit" ng-click="AddSalary(p)" class="btn btn-success" name="submit" value="Add salary"></td>
+  </tr>
+  </table>
+</form>

@@ -1,0 +1,32 @@
+<div class="matchSchedule_details row">
+  <div class=match_next >
+    <div class="wrap_match_next right-triangle">
+      <div class=right-padding>
+        <h4 class=headline03>ALL COACHES</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <button type="button" name="button" class="btn btn-success">GO TO COACH DASHBOARD</button>
+      </div>
+    </div>
+  </div>
+  <div class=match_versus-wrap style="margin-top:-400px;margin-left: 297px">
+    <div class=wrap_match-innerdetails>
+      <ul class="point_table scrollable">
+        <li class=clearfix>
+          <div class=subPoint_table>
+            <div class="headline01 smallpoint">ID</div>
+            <div class="headline01 largepoint">NAME</div>
+            <div class="headline01 smallpoint row row"><span>NATIONALITY</span><span></span></div>
+          </div>
+        </li>
+        <li ng-repeat="c in coach" class=clearfix>
+          <div class=subPoint_table>
+            <div class="headline01 smallpoint">{{c.Id}}</div>
+            <div class="headline01 largepoint">{{c.Name}}</div>
+            <div class="headline01 smallpoint row row"><span></span><span>{{c.Nationality}}</span></div>
+          </div>
+
+      </ul>
+    </div>
+  </div>
+</div>

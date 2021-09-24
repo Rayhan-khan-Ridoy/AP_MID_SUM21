@@ -1,0 +1,37 @@
+<form>
+ <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Name:</td>
+    <td><input type="text" class="form-control" ng-model="p.Name" value="{{p.Name}}">
+    <span class="text text-danger">{{nameError}}</span></td>
+  </tr>
+  <tr>
+    <td>UserName:</td>
+    <td><input type="text"  class="form-control" ng-model="p.UserName" value="{{p.UserName}}">
+    <span class="text text-danger">{{userNameError}}</span></td>
+  </tr>
+  <!-- <tr>
+    <td>Passowrd:</td>
+    <td><input type="password"  class="form-control" ng-model="p.Password" value="{{p.Passowrd}}"></td>
+  </tr> -->
+  <tr>
+    <td>Nationality:</td>
+    <td><input type="text" class="form-control" ng-model="p.Nationality" value="{{p.Nationality}}">
+    <span class="text text-danger">{{nationalityError}}</span></td>
+  </tr>
+  <tr>
+    <td>Age:</td>
+    <td><input type="number" class="form-control" ng-model="p.Age" value="{{p.Age}}">
+    <span class="text text-danger">{{ageError}}</span></td>
+  </tr>
+  <tr>
+    <td>Salary:</td>
+    <td>
+      <input type="text" class="form-control" ng-model="p.Salary_Id" value="{{p.Salary_Id}}">
+    <span class="text text-danger">{{salaryError}}</span></td>
+  </tr>
+  <tr>
+    <td><input type="submit" style="font-size:17px;" class="btn btn-success" ng-click="UpdateCoach(p)"  name="submit" value="Update Coach"></td>
+  </tr>
+  </table>
+</form>

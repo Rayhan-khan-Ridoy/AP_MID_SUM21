@@ -1,0 +1,26 @@
+<a href="#!/coachDashboard" class="btn btn-success">Back</a>
+<aside class=contentinner style="font-size:15px">
+  <table style="" class="table table-bordered table-hover">
+      <tr style="background:linear-gradient(45deg, black, transparent);font-size:20px;" align="center">
+     <td style="color:red">Id</td>
+     <td style="color:red">Name</td>
+     <td style="color:red">Type</td>
+     <td style="color:red">Action</td>
+    </tr>
+    <tr align="center" ng-repeat="p in formation track by $index">
+      <td>{{p.Id}}</td>
+      <td>{{p.Name}}</td>
+      <td>{{p.Type}}</td>
+      <td><a href="#!/coach_formationUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+          <a href="#!/coach_formationDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+          <a href ="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#!coach_formationCreate" class="btn btn-primary">Add Formation</a></td>
+    </tr>
+  </table>
+
+
+
+</aside>

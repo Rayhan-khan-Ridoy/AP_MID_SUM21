@@ -1,0 +1,27 @@
+<a href="#!/physioDashboard" class="btn btn-success">Back</a>
+<aside class=contentinner>
+  <ul class=ticketInfo>
+    <li class=clearfix>
+      <div class=subPoint_table>
+        <div style="margin-left: -160px" class="headline01 smallpoint">MATCH NO.</div>
+        <div class="headline01 largepoint">MATCH DETAILS</div>
+        <div class="headline01 smallpoint row row"><span>#</span><span></span></div>
+      </div>
+    </li>
+      <li ng-repeat="f in fixture">
+          <ul class="t_info headline01 clearfix">
+              <li>{{f.Id}}</li>
+              <li>
+                  <div class="headline01 clearfix"><span>Our Team</span><span
+                          class=vs>vs</span> <span>{{f.Opponent}}</span></div>
+                  <div class="ticketInner_info paragraph02 clearfix"><span>{{f.Date}}</span>
+                      <span>18.25pm</span> <span class=capitalize01>{{f.Result}}</span>
+                  </div>
+              </li>
+              <li><a href=# class="btn-small01 btn-green">book tickets</a></li>
+          </ul>
+      </li>
+
+  </ul>
+
+  </aside>

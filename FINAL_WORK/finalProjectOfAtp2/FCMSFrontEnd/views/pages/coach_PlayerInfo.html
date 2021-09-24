@@ -1,0 +1,53 @@
+
+  <!-- <input type="text" ng-model="s.search" class="form-control" style="width:400px;margin-top:500px;">
+  <a href="#!admin_playerSearch{{s.search}}" -->
+  <a href="#!/coachDashboard" class="btn btn-success">Back</a>
+  <aside class=contentinner style="font-size:15px">
+    <table style="" class="table table-bordered table-hover">
+        <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+    <td ng-click="sortData('Id')">Id<div ng-class="getSortClass('Id')"></div></td>
+     <td ng-click="sortData('Name')">Name<div ng-class="getSortClass('Name')"></div></td>
+     <td ng-click="sortData('UserName')">User Name<div ng-class="getSortClass('UserName')"></div></td>
+     <td ng-click="sortData('Nationality')">Nationality<div ng-class="getSortClass('Nationality')"></div></td>
+     <td ng-click="sortData('Age')">Age<div ng-class="getSortClass('Age')"></div></td>
+     <td ng-click="sortData('Height')">Height<div ng-class="getSortClass('Height')"></div></td>
+     <td ng-click="sortData('Weight')">Weight<div ng-class="getSortClass('Weight')"></div></td>
+     <td ng-click="sortData('Position')">Position<div ng-class="getSortClass('Position')"></div></td>
+     <td ng-click="sortData('Joining_Date')">Joining Date<div ng-class="getSortClass('Joining_Date')"></div></td>
+     <td ng-click="sortData('Contract_Year')">Contact Year<div ng-class="getSortClass('Contract_Year')"></div></td>
+     <td>Action</td>
+
+    <!-- <td>Action</td> -->
+    </tr>
+    <tr align="center" ng-repeat="p in players | orderBy:sortColumn:reverseSort">
+      <td>{{p.Id}}</td>
+      <td>{{p.Name}}</td>
+      <td>{{p.UserName}}</td>
+      <td>{{p.Nationality}}</td>
+      <td>{{p.Age}}</td>
+      <td>{{p.Height}}</td>
+      <td>{{p.Weight}}</td>
+      <td>{{p.Position}}</td>
+      <td>{{p.Joining_Date}}</td>
+      <td>{{p.Contract_Year}}</td>
+      <td><a href="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;
+        width:80px;padding:10px;
+        border-align:center;border-radius:10px;color:white;">Details</a></td>
+    <!--  <td ><a href="#!/admin_playerUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+          <a href="#!/admin_playerDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+          <a href ="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+      </td>  -->
+    </tr>
+  <!--  <tr>
+      <td><a style="font-size:20px" href="#!admin_playersCreate" class="btn btn-primary">Add Players</a></td>
+    </tr>  -->
+  </table>
+
+
+<br><br>
+<input type="text" ng-model="s.search" placeholder="SEARCH HERE....." class="form-control" style="width:420px;margin-bottom:15px;border:3px solid blue">
+<a style="font-size:15px" href="#!admin_playerSearch{{s.search}}" class="btn btn-success">Search</a>
+
+
+
+</aside>

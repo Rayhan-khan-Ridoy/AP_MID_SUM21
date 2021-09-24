@@ -1,0 +1,49 @@
+<a href="#!/adminDashboard" class="btn btn-success">Back</a>
+<aside class=contentinner style="font-size:15px">
+<table style="" class="table table-bordered table-hover">
+    <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+
+     <td>Id</td>
+     <td>Name</td>
+     <td>Average Rating</td>
+     <td>Goals</td>
+     <td>Assists</td>
+     <td>Accurate Pass</td>
+     <td>Key Pass</td>
+     <td>Interception</td>
+     <td>Successfully Tackled</td>
+     <td>Chance Created</td>
+     <td>Dribbles Completed</td>
+     <td>Saves</td>
+     <td>Red Cards</td>
+     <td>Yellow Cards</td>
+     <td>Action</td>
+    </tr>
+    <tr align="center" ng-repeat="p in performance track by $index">
+      <td><br><hr>{{p.Id}}</td>
+      <td><br><hr>{{p.Name}}</td>
+      <td><br><hr>{{p.Avg_Rating}}</td>
+      <td><br><hr>{{p.Goals}}</td>
+      <td><br><hr>{{p.Assists}}</td>
+      <td><br><hr>{{p.Accurate_Pass}}</td>
+      <td><br><hr>{{p.Key_Pass}}</td>
+      <td><br><hr>{{p.Interception}}</td>
+      <td><br><hr>{{p.Successfully_Tackled}}</td>
+      <td><br><hr>{{p.Chance_Create}}</td>
+      <td><br><hr>{{p.Dribbles_Completed}}</td>
+      <td><br><hr>{{p.Saves}}</td>
+      <td><br><hr>{{p.Red_Cards}}</td>
+      <td><br><hr>{{p.Yellow_Cards}}</td>
+      <td><a href="#!/admin_PerformanceUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+        <hr>
+          <a href="#!/admin_PerformanceDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+        <hr>
+          <a href ="#!/admin_PerformanceDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#!admin_PerformanceCreate" class="btn btn-primary">Add Performance</a></td>
+    </tr>
+  </table>
+</aside>

@@ -1,0 +1,73 @@
+<form>
+ <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Average Rating:</td>
+    <td><input type="number" class="form-control" ng-model="p.Avg_Rating" value="">
+    <span class="text text-danger">{{arError}}</span></td>
+  </tr>
+  <tr>
+    <td>Goals:</td>
+    <td><input type="number"  class="form-control" ng-model="p.Goals" value="">
+    <span class="text text-danger">{{goalsError}}</span></td>
+  </tr>
+  <tr>
+    <td>Assists:</td>
+    <td><input type="number"  class="form-control" ng-model="p.Assists" value="">
+    <span class="text text-danger">{{assistsError}}</span></td>
+  </tr>
+  <tr>
+    <td>Accurate Pass:</td>
+    <td><input type="number" class="form-control" ng-model="p.Accurate_Pass" value="">
+    <span class="text text-danger">{{acPassError}}</span></td>
+  </tr>
+  <tr>
+    <td>Key Pass:</td>
+    <td><input type="number" class="form-control" ng-model="p.Key_Pass" value="">
+    <span class="text text-danger">{{keyPassError}}</span></td>
+  </tr>
+  <tr>
+    <td>Interception:</td>
+    <td><input type="number" class="form-control" ng-model="p.Interception" value="">
+    <span class="text text-danger">{{interceptionError}}</span></td>
+  </tr>
+  <tr>
+    <td>Successfully Tackled:</td>
+    <td><input class="form-control" type="number"  ng-model="p.Successfully_Tackled" value="">
+    <span class="text text-danger">{{succesfullyTackledError}}</span></td>
+  </tr>
+  <tr>
+    <td>Chance Create:</td>
+    <td><input type="number" class="form-control"
+       ng-model="p.Chance_Create" value="">
+     <span class="text text-danger">{{chanceCreateError}}</span></td>
+  </tr>
+  <tr>
+    <td>Dribbles Completed:</td>
+    <td><input type="number" class="form-control" ng-model="p.Dribbles_Completed" value="">
+    <span class="text text-danger">{{dribCompletedError}}</span></td>
+  </tr>
+  <tr>
+    <td>Saves:</td>
+    <td>
+      <input type="number" class="form-control" ng-model="p.Saves">
+      <span class="text text-danger">{{savesError}}</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Red Cards:</td>
+    <td>
+      <input type="number" class="form-control" ng-model="p.Red_Cards">
+      <span class="text text-danger">{{rCardError}}</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Yellow Cards:</td>
+    <td>
+      <input type="number" class="form-control" ng-model="p.Yellow_Cards"</td>
+      <span class="text text-danger">{{yCardError}}</span>
+  </tr>
+  <tr>
+    <td><input type="submit" ng-click="AddPerformance(p)"  name="submit"class="btn btn-success" value="Add Performance"></td>
+  </tr>
+  </table>
+</form>

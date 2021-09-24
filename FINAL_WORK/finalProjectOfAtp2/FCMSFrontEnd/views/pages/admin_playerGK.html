@@ -1,0 +1,47 @@
+<aside class=contentinner>
+  <!-- <input type="text" ng-model="s.search" class="form-control" style="width:400px;margin-top:500px;">
+  <a href="#!admin_playerSearch{{s.search}}" -->
+  <table style="" class="table table-bordered table-hover">
+      <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+     <td>Id</td>
+     <td>Name</td>
+     <td>Username</td>
+     <td>Nationality</td>
+     <td>Age</td>
+     <td>Height</td>
+     <td>Weight</td>
+     <td>Position</td>
+     <td>Joining Date</td>
+     <td>Contact Year</td>
+  <!--   <td>Action</td>  -->
+    </tr>
+    <tr align="center" ng-repeat="p in player track by $index">
+      <td>{{p.Id}}</td>
+      <td>{{p.Name}}</td>
+      <td>{{p.UserName}}</td>
+      <td>{{p.Nationality}}</td>
+      <td>{{p.Age}}</td>
+      <td>{{p.Height}}</td>
+      <td>{{p.Weight}}</td>
+      <td>{{p.Position}}</td>
+      <td>{{p.Joining_Date}}</td>
+      <td>{{p.Contract_Year}}</td>
+  <!--    <td><a href="#!/admin_playerUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+          <a href="#!/admin_playerDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+          <a href ="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+      </td> -->
+    </tr>
+  </table>
+
+
+<br><br>
+<input type="text" ng-model="s.search" placeholder="SEARCH HERE....." class="form-control" style="width:320px;margin-bottom:15px;border:3px solid blue">
+<a href="#!admin_playerSearch{{s.search}}" class="btn btn-success">Search</a>
+<a href="#!SearchGK" class="btn btn-success">GoalKeeper</a>
+<a href="#!SearchCF" class="btn btn-success">Forwars</a>
+<a href="#!SearchWingers" class="btn btn-success">Wingers</a>
+<a href="#!SearchCMF" class="btn btn-success">CMF</a>
+<a href="#!SearchDMF" class="btn btn-success">DMF</a>
+<a href="#!SearchCB" class="btn btn-success">CB</a>
+
+</aside>

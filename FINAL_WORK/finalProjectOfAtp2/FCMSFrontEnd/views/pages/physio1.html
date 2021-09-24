@@ -1,0 +1,33 @@
+<a href="#!/adminDashboard" class="btn btn-success">Back</a>
+  <!-- <input type="text" ng-model="s.search" class="form-control" style="width:400px;margin-top:500px;">
+  <a href="#!admin_playerSearch{{s.search}}" -->
+  <aside class=contentinner>
+    <table style="" class="table table-bordered table-hover">
+        <tr style="background:linear-gradient(45deg, red, transparent);font-size:20px;" align="center">
+     <td>Id</td>
+     <td>Name</td>
+     <td>Username</td>
+     <td>Degree</td>
+     <td>Major</td>
+     <td>SalaryAmount</td>
+     <td>Salary Grade</td>
+     <td>Action</td>
+    </tr>
+    <tr style="font-size:15px" align="center" ng-repeat="p in coach track by $index">
+      <td>{{p.Id}}</td>
+      <td>{{p.Name}}</td>
+      <td>{{p.UserName}}</td>
+      <td>{{p.Degree}}</td>
+      <td>{{p.Major}}</td>
+      <td>{{p.SalaryAmount}}</td>
+      <td>{{p.SalaryGrade}}</td>
+      <td><a href="#!/admin_physioUpdate{{p.Id}}" style="background:green;border:1px solid;width:100px;height:20px;padding:10px;border-align:center;border-radius:10px;color:white;">Edit</a>
+          <a href="#!/admin_physioDelete{{p.Id}}" style="background:#D0152E;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Delete</a>
+          <a href ="#!/admin_playerDetails{{p.Id}}" style="background:blue;border:1px solid;width:100px;padding:10px;border-align:center;border-radius:10px;color:white;">Details</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#!admin_physioCreate" class="btn btn-success">Add Physio</a></td>
+    </tr>
+  </table>
+</aside>

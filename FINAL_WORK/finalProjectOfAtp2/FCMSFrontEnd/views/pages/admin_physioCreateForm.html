@@ -1,0 +1,43 @@
+<form>
+  <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Name:</td>
+    <td><input type="text" class="form-control" ng-model="p.Name" value="">
+    <span class="text text-danger">{{nameError}}</span></td>
+  </tr>
+  <tr>
+    <td>UserName:</td>
+    <td><input type="text"  class="form-control" ng-model="p.UserName" value="">
+    <span class="text text-danger">{{userNameError}}</span></td>
+  </tr>
+  <tr>
+    <td>Passowrd:</td>
+    <td><input type="password"  class="form-control" ng-model="p.Password" value="">
+    <span class="text text-danger">{{passError}}</span></td>
+  </tr>
+  <tr>
+    <td>Degree:</td>
+    <td><input type="text" class="form-control" ng-model="p.Degree" value="">
+    <span class="text text-danger">{{degreeError}}</span></td>
+  </tr>
+  <tr>
+    <td>Major</td>
+    <td><input type="text" class="form-control" ng-model="p.Major" value="">
+    <span class="text text-danger">{{majorError}}</span></td>
+  </tr>
+  <tr>
+    <td>Salary:</td>
+    <td>
+      <select class="form-control form-control-line" required ng-model="p.Salary_Id">
+							<option disabled selected>Select Salary</option>
+							<option ng-repeat ="s in salary" value={{s.Id}}>{{s.Grade}}</option>
+
+			</select>
+      <span class="text text-danger">{{salaryError}}</span>
+    </td>
+  </tr>
+  <tr>
+    <td><input type="submit" ng-click="AddPhysio(p)" class="btn btn-success" name="submit" value="Add Physio"></td>
+  </tr>
+  </table>
+</form>

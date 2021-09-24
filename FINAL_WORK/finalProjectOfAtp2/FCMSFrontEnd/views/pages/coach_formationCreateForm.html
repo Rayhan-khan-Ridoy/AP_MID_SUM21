@@ -1,0 +1,21 @@
+<form>
+  <table class="table table-dark table-striped" style="width:600px;font-size:16px;">
+  <tr>
+    <td>Formation Name:</td>
+    <td><input type="text" class="form-control" ng-model="p.Name" value="">
+    <span class="text text-danger">{{nameError}}</span></td>
+  </tr>
+  <tr>
+    <td>Formation Type:</td>
+     <td>
+         <select class="form-control form-control-line" required ng-model="p.Type">
+   							<option disabled selected>Select Formation</option>
+   							<option ng-repeat ="s in type" >{{s.Type}}</option>
+   			</select>
+    <span class="text text-danger">{{typeError}}</span></td>
+  </tr>
+  <tr>
+    <td><input type="submit" ng-click="AddFormation(p)" class="btn btn-success" name="submit" value="Add Formation"></td>
+  </tr>
+  </table>
+</form>
